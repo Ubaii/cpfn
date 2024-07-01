@@ -25,6 +25,7 @@ Skrip ini menyediakan panel kontrol berbasis CLI untuk mengelola konfigurasi ser
 1. Clone repositori ini:
    ```bash
    git clone https://github.com/username/repo.git
-   cd repo```
+   cd repo
+
 2. chmod +x install.sh
 3. ./install.sh
