@@ -35,7 +35,7 @@ Installation
     
 2.  Ensure you run this script as root:
     
-        sudo ./script.py
+        sudo cpfn
     
 
 Usage
@@ -45,49 +45,49 @@ Run the script with the appropriate arguments to perform the desired action. Bel
 
 ### Start, Stop, Restart, and Reload Nginx
 
-    sudo ./script.py start
-    sudo ./script.py stop
-    sudo ./script.py restart
-    sudo ./script.py reload
-    sudo ./script.py status
+    sudo cpfn start
+    sudo cpfn stop
+    sudo cpfn restart
+    sudo cpfn reload
+    sudo cpfn status
 
 ### Add Site Configuration
 
 Adding a new site configuration manually:
 
-    sudo ./script.py add --domain example.com --root-dir /var/www/example --php-sock php7.4-fpm.sock --ssl
+    sudo cpfn add --domain example.com --root-dir /var/www/example --php-sock php7.4-fpm.sock --ssl
 
 Adding a site configuration from a file:
 
-    sudo ./script.py add --file mysite.conf
+    sudo cpfn add --file mysite.conf
 
 ### Edit Site Configuration
 
-    sudo ./script.py edit --file mysite.conf
+    sudo cpfn edit --file mysite.conf
 
 ### Delete Site Configuration
 
-    sudo ./script.py delete --file mysite.conf
+    sudo cpfn delete --file mysite.conf
 
 ### Enable or Disable Site Configuration
 
 Enable a site:
 
-    sudo ./script.py enable --file mysite.conf
+    sudo cpfn enable --file mysite.conf
 
 Disable a site:
 
-    sudo ./script.py disable --file mysite.conf
+    sudo cpfn disable --file mysite.conf
 
 ### Add New User
 
-    sudo ./script.py add --create-user
+    sudo cpfn add --create-user
 
 ### List Sites
 
 Display a list of available and enabled sites:
 
-    sudo ./script.py list
+    sudo cpfn list
 
 Contributing
 ------------
