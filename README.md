@@ -34,6 +34,7 @@ Installation
         cd repo
         chmod +x install.sh
         ./install.sh
+        cpfn -h or cpfp -h
     
 3.  Ensure you run this script as root:
     
