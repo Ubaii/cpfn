@@ -30,10 +30,12 @@ Installation
 
 1.  Clone this repository:
     
-        git clone https://github.com/username/repo.git
+        git clone https://github.com/ubaii/cpfn.git
         cd repo
+        chmod +x install.sh
+        ./install.sh
     
-2.  Ensure you run this script as root:
+3.  Ensure you run this script as root:
     
         sudo cpfn
     
@@ -55,7 +57,7 @@ Run the script with the appropriate arguments to perform the desired action. Bel
 
 Adding a new site configuration manually:
 
-    sudo cpfn add --domain example.com --root-dir /var/www/example --php-sock php7.4-fpm.sock --ssl
+    sudo cpfn add --domain www.example.com example.com --root-dir /var/www/example --php-sock php7.4-fpm.sock --ssl
 
 Adding a site configuration from a file:
 
