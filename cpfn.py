@@ -36,7 +36,7 @@ def edit_config(file_path):
     editor = os.getenv('EDITOR', 'nano')
     subprocess.run([editor, file_path])
 
-def add_config_manual(file_name, ssl, port, domains, root_dir, per_users, php_sock, routing_file=None):
+def add_config_manual(file_name, ssl, port, domains, root_dir, php_sock, routing_file=None):
     available_path = "/etc/nginx/sites-available/" + file_name
     enabled_path = "/etc/nginx/sites-enabled/" + file_name
 
@@ -232,7 +232,7 @@ def main():
                     print("Use -h for help.")
                     sys.exit(1)
                 domain = remove_protocol(' '.join(args.domain))
-                add_config_manual(f'{domain}.conf', args.ssl, args.port, args.domain, args.root_dir, args.per_users, args.php_sock, args.routing)
+                add_config_manual(f'{domain}.conf', args.ssl, args.port, args.domain, args.root_dir, args.php_sock, args.routing)
         elif args.action == "list":
             list_sites()
         elif args.action == "delete":
